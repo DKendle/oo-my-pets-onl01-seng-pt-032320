@@ -21,7 +21,7 @@ class Owner
   def self.count 
     @@counter
   end
- # binding.pry
+
   def self.reset_all
     @@all.clear
     @@counter = 0
@@ -38,4 +38,27 @@ class Owner
   def dogs
    Dog.all.select {|dog| dog.owner == self}
   end
+  
+  def buy_cat
+    
+  end
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 end

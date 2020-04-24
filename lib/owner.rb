@@ -32,6 +32,6 @@ class Owner
   end
   
   def cats
-    
+    Cat.all.self
   end
 end

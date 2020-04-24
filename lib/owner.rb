@@ -52,11 +52,9 @@ class Owner
   end
   #binding.pry
   def walk_dogs
-    @dogs.collect do |dog_obj|
-      if dogs.mood == "nervous"
-        dogs.mood == "happy"
-      end 
-    end
+   @dogs.each do |dog|
+     dog.mood = "happy"
+   end
   end
   
   def feed_cats

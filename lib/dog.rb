@@ -4,16 +4,16 @@ class Dog
   
   
   
-  @@all_dogs = []
+  @@all = []
   
   def initialize(name, owner)
     @name = name
     @owner = owner
     @mood = "nervous"
-    @@all_dogs << self 
+    @@all << self 
   end
   
   def self.all
-    @@all_dogs
+    @@all
   end
 end

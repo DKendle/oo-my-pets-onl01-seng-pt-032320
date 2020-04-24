@@ -54,7 +54,9 @@ class Owner
   def walk_dogs
     ##access dog_obj
     ##change dog_obj's @mood to happy
-    @dogs.collect {|dog_obj| }
+    @dogs.collect do |dog_obj|
+      if dogs.mood == "nervous"
+        
   end
   
   def feed_cats

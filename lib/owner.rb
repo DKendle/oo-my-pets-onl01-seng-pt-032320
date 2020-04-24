@@ -32,6 +32,7 @@ class Owner
   end
   
   def cats
-    Cat.all.self
+   Cat.all.select do |cat_obj|
+     
   end
 end

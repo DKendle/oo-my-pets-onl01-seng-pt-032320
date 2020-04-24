@@ -6,14 +6,13 @@ class Owner
  
  @@all = []
  @@counter = 0
- @@pets = {
-   :dogs => [],
-   :cats => []
- }
+ 
  
   def initialize(name)
     @name = name
     @species = "human"
+    @dogs = []
+    @cats = []
     @@all << self
     @@counter += 1
   end
@@ -44,18 +43,17 @@ class Owner
   end
   
   def buy_cat(name)
-    @@pets[:cats] << Cat.new(name, self)
+    cat_obj = Cat.new(name)
+    @cat << cat_obj
   end
   
   def buy_dog(name)
-    @@pets[:dogs] << Dog.new(name, self)
+
 
   end
   #binding.pry
   def walk_dogs
-    @@pets.each do |dog, mood|
-      dog.mood = 'happy'
-    end
+   Dog.all.select 
   end
   
   def feed_cats

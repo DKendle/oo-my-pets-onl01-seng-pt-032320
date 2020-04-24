@@ -3,11 +3,7 @@ class Owner
  attr_accessor :cats, :dogs
  attr_reader :name, :species
 
- @@pets = {
-   :cats => [],
-   :dogs => []
-   
- }
+ 
  @@all = []
  @@counter = 0
  
@@ -52,11 +48,7 @@ class Owner
   end
   
   def walk_dogs
-    new_mood = []
-    @@pets[:dogs].each do |dog|
-     new_mood << dog.mood = "happy"
-   end
-   new_mood
+   
   end
   
   

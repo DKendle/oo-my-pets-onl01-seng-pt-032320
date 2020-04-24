@@ -44,11 +44,11 @@ class Owner
   end
   
   def buy_cat(name)
-    @@pets[:cats] = Cat.new(name, self)
+    @@pets[:cats] << Cat.new(name, self)
   end
   
   def buy_dog(name)
-    @@pets[:dogs] = Dog.new(name, self)
+    @@pets[:dogs] << Dog.new(name, self)
 
   end
   #binding.pry

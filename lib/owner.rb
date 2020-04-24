@@ -1,6 +1,6 @@
 require "pry"
 class Owner
- attr_accessor 
+ attr_accessor :cats
  attr_reader :name, :species
 
  
@@ -31,6 +31,7 @@ class Owner
     "I am a #{@species}."
   end
   
-  def cat 
+  def cats
+    
   end
 end

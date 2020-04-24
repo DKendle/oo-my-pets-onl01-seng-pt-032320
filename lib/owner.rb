@@ -6,6 +6,7 @@ class Owner
  
  @@all = []
  @@counter = 0
+ @@pets 
  
   def initialize(name)
     @name = name

@@ -47,7 +47,7 @@ class Owner
     @cat << cat_obj
   end
   
-  def buy_dog(name, self)
+  def buy_dog(name)
   end
   #binding.pry
   def walk_dogs

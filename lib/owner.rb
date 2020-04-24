@@ -7,7 +7,8 @@ class Owner
  @@all = []
  @@counter = 0
  @@pets = {
-   :dogs => []
+   :dogs => [],
+   :cats => []
  }
  
   def initialize(name)
@@ -47,8 +48,8 @@ class Owner
   end
   
   def buy_dog(name)
-    dog_obj = Dog.new(name, self)
-    @dogs << dog_obj
+    @@pets[:dogs] = Dog.new(name, self)
+
   end
   #binding.pry
   def walk_dogs

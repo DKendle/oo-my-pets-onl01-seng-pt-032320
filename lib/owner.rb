@@ -11,6 +11,8 @@ class Owner
     @name = name
     @species = "human"
     @@all << self
+    @cats = []
+    @dogs = []
     @@counter += 1
   end
   
@@ -41,10 +43,12 @@ class Owner
   
   def buy_cat(name)
     cat_obj = Cat.new(name, self)
+    @cats << cat_obj
   end
   
   def buy_dog(name)
     dog_obj = Dog.new(name, self)
+    @dogs << dog_obj
   end
   
   def walk_dogs

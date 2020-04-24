@@ -48,7 +48,7 @@ class Owner
   end
   binding.pry
   def walk_dogs
-    dogs.mood = "happy"
+    dog
   end
   
   

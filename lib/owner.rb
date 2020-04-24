@@ -53,7 +53,7 @@ class Owner
   end
   #binding.pry
   def walk_dogs
-    @@pets[:dogs].each do |dog|
+    @@pets.each do |dog, mood|
       dog.mood = 'happy'
     end
   end

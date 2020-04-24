@@ -57,6 +57,8 @@ class Owner
     @dogs.collect do |dog_obj|
       if dogs.mood == "nervous"
         dogs.mood == "happy"
+      end 
+    end
   end
   
   def feed_cats

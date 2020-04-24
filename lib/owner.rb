@@ -50,9 +50,11 @@ class Owner
     dog_obj = Dog.new(name, self)
     @dogs << dog_obj
   end
-  binding.pry
+  #binding.pry
   def walk_dogs
-    @dogs.select {|dog_objects| dog.mood == "happy"}
+    ##access dog_obj
+    ##change dog_obj's @mood to happy
+    
   end
   
   def feed_cats

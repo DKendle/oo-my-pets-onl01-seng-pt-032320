@@ -43,12 +43,13 @@ class Owner
   end
   
   def buy_cat(name)
-    cat_obj = Cat.new(name)
+    cat_obj = Cat.new(name, self)
     @cat << cat_obj
   end
   
-  def buy_dog(name)
-
+  def buy_dog(name, self)
+    dog_obj = Dog.new(name, self)
+    @dog << dog_obj
 
   end
   #binding.pry

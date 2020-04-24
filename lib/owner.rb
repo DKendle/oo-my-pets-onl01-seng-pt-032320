@@ -52,6 +52,7 @@ class Owner
   end
   
   def walk_dogs
+    @dogs.
   end
   
   def feed_cats
